@@ -27,9 +27,7 @@ a {
 section {
   margin-left: 20px;
 }
-p {
-  font-size: 24px;
-}
+
 header h1 {
   font-size: 28px;
 }
@@ -37,10 +35,14 @@ header p {
   font-style: italic;
 }
 
-/* footer */
+article p {
+  font-size: 24px;
+}
 footer {
   background-color: #444;
-  text-align: center;
+}
+footer p {
   color: #fff;
+  text-align: center;
   padding: 10px;
 }
