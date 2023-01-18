@@ -1,0 +1,43 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+
+section {
+    height: 50vh;
+}
+
+section:first-child img {
+    width: 200px;
+}
+
+section:first-child {
+    background-color: lightgreen;
+}
+
+
+
+section:last-child {
+    background-color: rgb(238, 180, 144);
+}
+
+section:last-child img {
+    width: 100px;
+}
+
+section {
+    position: relative;
+}
+
+section .container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+section .container .icon{
+    color: white;
+    position: absolute;
+    right: 6px;
+    bottom: 12px;
+}
