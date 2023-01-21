@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    /* align-content: center; */
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 10px;
+    box-shadow: 0px 0px 16px 2px;
+    margin: 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: -15px;
+}
+
+h1 {
+    margin-top: -5px;
+}
