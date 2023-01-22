@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(119, 95, 143);
+    padding: 20px;
+
+}
+
+div {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+ul {
+    margin-left: 0px;
+    padding-left: 10px;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: center;
+    /* just add float */
+    float: right;
+}
