@@ -1,0 +1,52 @@
+:root {
+    --clr-primary: #ff9671;
+    --clr-primary-light: #ffeae3;
+    --clr-grey: #58545d;
+    --clr-grey-light: #e7e5ea;
+}
+
+
+
+body {
+    background-color: rgb(214, 221, 221);
+}
+
+.group {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.group__btn {
+    margin: 20px 0px;
+    padding: 10px;
+    width: 33.3%;
+    border: 1px solid var(--clr-grey);
+    color: var(--clr-grey);
+    background-color: var(--clr-grey-light);
+    cursor: pointer;
+
+}
+
+.group__btn:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.group__btn:nth-child(2) {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+.group__btn:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.group__btn.active {
+    color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    background-color: var(--clr-primary-light);
+}
