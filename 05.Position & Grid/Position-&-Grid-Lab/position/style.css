@@ -1,0 +1,56 @@
+.static .card__buttons {
+    background-color: rgb(178, 236, 207);
+    position: static;
+    top: 20px;
+    left: 20px;
+}
+
+.relative .card__buttons {
+    background-color: rgb(236, 194, 178);
+    position: relative;
+    top: -150px;
+    left: 20px;
+}
+
+/* for position absolute:
+ we need container with position relative (or fixed or sticky) to hold our absolute item */
+
+.absolute {
+    position: relative;
+
+}
+
+.absolute .card__buttons {
+    background-color: rgb(188, 178, 236);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.fixed .card__buttons {
+    background-color: rgb(235, 236, 178);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* sticky stay in the container - and get first scroll bar */
+
+.sticky {
+    height: 500px;
+    overflow: auto;
+}
+
+.sticky .card__buttons {
+    background-color: rgb(236, 178, 178);
+    position: sticky;
+    top: 40px;
+    }
+
+/* .sticky .card__buttons {
+    background-color: rgb(236, 178, 178);
+    position: sticky;
+    top: 40px;
+} */

@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+section {
+    background-color: aqua;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+section img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+
+    /* center the element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section {
+    background-image: url(https://images.unsplash.com/photo-1674397300354-2e4b3e9fae90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+} */
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.2);
+}
