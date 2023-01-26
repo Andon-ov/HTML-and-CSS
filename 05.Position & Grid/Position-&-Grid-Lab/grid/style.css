@@ -1,21 +1,66 @@
 @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+/*@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');*/
 
 body {
-    background-color: rgb(187, 185, 189);
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    background-color: #f562a8;
+    padding: 6px 24px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0px;
+    z-index: 100;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header .nav {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .nav .nav__item {
+    display: inline-block;
+}
+
+.header .nav .nav__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.header .nav .nav__item .nav__item_link {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
 }
 
 .card {
-    max-width: 400px;
-    margin: 60px auto;
+    position: relative;
     background-color: #fab5a7;
     border-radius: 14px;
     overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    z-index: 2;
 }
 
 /* Card style - Classic */
 .card .head {
     position: relative;
-    height: 250px;
+    height: 40%;
 }
 
 .card .head .head__tag {
@@ -34,12 +79,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: top top;
 }
 
 
 .card .content {
     padding: 18px;
+    height: 60%;
 
 }
 
@@ -64,15 +110,12 @@ body {
 .card .content.content--icon .content__icon {
     position: absolute;
     right: 18px;
-
     top: 50%;
     transform: translateY(-50%);
     /* transform: translate(0, -50%); */
     font-size: 32px;
-
     color: rgb(92, 90, 88);
     cursor: pointer;
-
     border: none;
     padding: 0px;
     background-color: transparent;
@@ -87,12 +130,19 @@ body {
     border-radius: 18px;
     border: none;
     cursor: pointer;
-
     position: absolute;
-    bottom: 18px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    opacity: 0;
+
+    transition: all 300ms ease-in-out;
+}
+
+.card.card--read-more .content .content__btn:hover {
+    background-color: rgb(163, 163, 236);
+    color: white;
 }
 
 .card.card--read-more .content {
@@ -104,10 +154,27 @@ body {
     width: 100%;
     height: 50%;
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
     left: 0px;
     background: linear-gradient(0deg, rgba(250, 181, 167, 1) 50%, rgba(0, 0, 0, 0) 90%);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
 }
+
+.card.card--read-more:hover .content .content__btn {
+    bottom: 18px;
+    opacity: 1;
+
+}
+
+.card.card--read-more:hover .content::after {
+    bottom: 0px;
+    opacity: 1;
+}
+
+
+
+
 
 /* Card style - BG Image */
 
@@ -134,15 +201,12 @@ body {
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.1);
-
 }
 
 .card.card--bg-img .head,
 .card.card--bg-img .content {
-
     z-index: 1;
     position: relative;
-
 }
 
 .card.card--bg-img .head .head__tag {
@@ -173,11 +237,22 @@ body {
 
 /* Card style - panel */
 .panel {
-    max-width: 400px;
-    margin: 60px auto;
-    background-color: #fab5a7;
+
+    background-color: #f562a8;
     border-radius: 14px;
-    /*overflow: hidden;*/
     padding: 18px;
-    color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.panel .panel__icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+
+}
+
+.panel .panel__text {
+    font-size: 18px;
+    text-transform: uppercase;
 }

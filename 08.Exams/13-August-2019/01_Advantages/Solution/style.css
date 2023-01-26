@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik+Gemstones&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');
+
+:root {
+    --clr-primary: #f4f5f7;
+    --clr-green: #23be5e;
+    --clr-blue: #42abf8;
+    --clr-text: #5a6674;
+
+}
+
+body {
+    background-color: white;
+    font-family: "Lato";
+}
+
+header {
+    display: flex;
+    position: relative;
+}
+
+h5 {
+    position: absolute;
+    text-align: center;
+    background-color: var(--clr-blue);
+    padding: 6px 15px;
+    color: white;
+    right: 0px;
+    bottom: -1px;
+    /* margin-right: 0px;
+    margin-left: auto; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: "Lato";
+}
+
+.container {
+    height: 1440px;
+    width: 800px;
+    margin: 50px auto;
+}
+
+ul {
+    background-color: white;
+}
+
+li {
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 12px;
+}
+
+.fa-check {
+    padding: 2px;
+    margin-left: auto;
+    border-radius: 50%;
+    color: #ecf3f1;
+    background-color: var(--clr-green);
+    margin-right: 26px;
+}
+
+li:first-child {
+    border-top-left-radius: 5px;
+}
+
+li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
