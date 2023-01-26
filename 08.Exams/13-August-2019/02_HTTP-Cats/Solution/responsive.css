@@ -1,4 +1,55 @@
-/* 
+@media screen and (max-width: 768px) {
+    html {
+        background-color: #1c7430;
+    }
+
+    .wrapper.style2 {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .gallery div {
+        width: 100%;
+    }
+
+    .spotlight > * {
+        width: 100%;
+    }
+
+    .spotlight {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .spotlight .inner {
+        font-size: 22px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .spotlight img {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spotlight p:last-child {
+        color: gray;
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 22px;
+    }
+
+    .wrapper > header h2:after {
+
+        width: 25%;
+    }
+}
+
+
+/*
 # 02. HTTP Cats
 
 ## Tasks
