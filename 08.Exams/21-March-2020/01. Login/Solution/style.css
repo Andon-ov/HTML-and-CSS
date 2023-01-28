@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Rubik+Gemstones&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg__overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+.bg__img {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
+
+.btn {
+    background-color: #d41872;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+form {
+    border-radius: 15px;
+    width: 460px;
+    height: 280px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+input {
+    padding: 10px 10px 10px 30px;
+    border: none;
+    /* margin-left: 40px; */
+    font-size: 24px;
+
+}
+input:focus-visible{
+    border: 1px solid red;
+}
+
+input::selection{
+    border-color: #d41872;
+}
+
+.inputs:first-child {
+    margin-top: 30px;
+
+}
+
+.icon {
+    color: #c1a9a7  ;
+    margin-left: 40px;
+    font-size: 25px;
+
+}
