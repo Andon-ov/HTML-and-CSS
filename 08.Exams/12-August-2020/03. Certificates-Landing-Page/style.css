@@ -1,0 +1,280 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-lightBlue: #43abf7;
+    --clr-darckBlue: #29394b;
+    --clr-overlay: #fdfcfc;
+    --clr-font: #3f4d5e;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    position: relative;
+}
+
+.wraper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.50);
+}
+
+.logo {
+    width: 160px;
+}
+
+.nav__ul {
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.nav__ul>li:nth-child(3) {
+    box-shadow: 0px -15px 0px -1px #43abf7;
+    /* border-top: 3px solid var(--clr-lightBlue); */
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-font);
+
+}
+
+.nav__ul>li:last-child {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--clr-lightBlue);
+    box-shadow: 0px 1px 12px 0px #43abf7;
+
+}
+
+.nav__ul>li:last-child a {
+    color: white;
+}
+
+/* hero */
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    padding: 160px;
+    align-items: center;
+}
+
+/* hero background */
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 80vh;
+    left: 0;
+    top: 0;
+}
+
+
+.hero__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient {
+    background-color: rgba(255, 255, 255, 0.90);
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 80vh;
+    left: 0;
+    top: 0;
+}
+
+
+.info {
+    width: 70%;
+}
+
+.info__content {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    background-color: var(--clr-darckBlue);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info__content h1 {
+    font-size: 22px;
+}
+
+.diplopa__img {
+    display: flex;
+    align-items: flex-end;
+}
+
+.diplopa {
+    width: 230px;
+}
+
+.info__p {
+    padding: 25px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+/* Diploma */
+.diploma_info {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.diploma_info h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.diploma__info-more {
+    background-color: #f4f5f7;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.diploma__info-more p {
+    margin-bottom: 20px;
+}
+
+.diploma_info>p {
+    padding: 20px 0;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 38vh;
+    overflow: hidden;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+
+    margin-bottom: 100px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.gradient__card {
+    background-color: rgba(65, 101, 146, 0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card__title {
+    font-size: 32px;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+
+}
+
+.card__btn {
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn .first {
+    background-color: white;
+    color: var(--clr-lightBlue);
+}
+
+.btn .second {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* footer */
+footer {
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__logo {
+    width: 120px;
+}
+
+.footer_ul {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.logo__text {
+    color: gray;
+}
