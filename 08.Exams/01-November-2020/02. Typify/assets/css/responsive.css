@@ -1,0 +1,81 @@
+@media screen and (max-width:600px) {
+    :root {
+        --width: 95%;
+    }
+
+    .banner {
+        gap: 30px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner h2 {
+        width: var(--width);
+        font-size: 32px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .actions {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    /* button */
+
+    .actions li > input[type=submit],
+    .actions li a {
+        margin: 0 auto;
+        width: 540px;
+    }
+    header.major {
+        margin-bottom: 2em;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    .wrapper>.inner {
+        width: var(--width)
+    }
+
+    .wrapper>.inner.narrow {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: var(--width)
+    }
+
+    .inner p{
+        padding-bottom: 30px;
+    }
+    .grid-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-form .form-control.narrow {
+        width: var(--width)
+    }
+
+    .grid-form .form-control {
+        width: var(--width)
+    }
+    .footer{
+        padding: 20px;
+    }
+    .footer .copyright {
+        margin: 0;
+    }
+}

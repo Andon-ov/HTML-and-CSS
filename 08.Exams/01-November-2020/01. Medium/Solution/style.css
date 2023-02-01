@@ -1,0 +1,61 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    width: 1200px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.head h1 {
+    font-size: 84px;
+}
+
+.head p {
+    font-size: 28px;
+    color: gray;
+}
+
+.card-body {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.button,
+.text {
+    flex: 1 0 50%;
+}
+
+.body-head {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.body-text {
+    font-size: 22px;
+    color: gray;
+}
+
+.body-text span {
+    background-color: #cefde9;
+}
+
+.button button {
+    font-size: 26px;
+    background-color: #03a57a;
+    border: none;
+    padding: 10px 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.divider {
+    margin: 0 auto;
+    color: black;
+    width: 35%;
+}
