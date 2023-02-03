@@ -1,0 +1,64 @@
+/* TODO: Add the responsive styles here */
+@media screen and (max-width:600px) {
+    .tm-header-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .tm-cta-section {
+        width: 600px;
+    }
+
+
+    .tm-gallery-page {
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .tm-gallery {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    figure {
+        width: 400px;
+    }
+
+    .img-fluid {
+        width: 400px;
+    }
+
+    .tm-gallery-item {
+        max-width: none;
+    }
+
+    .img-fluid:last-child {
+        max-width: none;
+        width: 600px;
+    }
+    .tm-description-box{
+        max-width: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .tm-footer {
+        margin-top: 0;
+    }
+
+}
