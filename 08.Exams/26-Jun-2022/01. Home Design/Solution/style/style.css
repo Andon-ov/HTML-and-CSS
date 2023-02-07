@@ -1,0 +1,100 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+body {
+    background-color: black;
+    font-family: 'Courgette', cursive;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.cards {
+    width: 1360px;
+    height: 615px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.head__subTitle {
+    font-size: 24px;
+    color: #cb2027;
+    margin-top: -10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.head__title {
+    font-size: 52px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    width: 340px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 200;
+}
+
+.card img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+.card__bg {
+    padding: 10px;
+    width: 330px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divide {
+
+    border: 0.1px solid red;
+}
+
+.card__foot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__foot i {
+    background-color: #cb2027;
+    padding: 1px 3px;
+    border-radius: 100%;
+    color: white;
+}
+
+.card__foot a {
+    text-decoration: none;
+    color: black;
+}
