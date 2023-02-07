@@ -1,1 +1,49 @@
-//TODO
+@media screen and (max-width :800px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainings {
+        flex-direction: column;
+    }
+
+    .trainings div {
+        width: 50%;
+    }
+
+    .instructors-pic {
+        flex-direction: column;
+    }
+
+    .getInTouch {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .site-footer .wrapper {
+        display: grid;
+        column-gap: 70px;
+        grid-template-areas:
+            "about about"
+            "sitemap contacts";
+    }
+
+    .about {
+        grid-area: about;
+    }
+
+    .sitemap {
+        grid-area: sitemap;
+        width: 360px;
+    }
+
+    .contacts {
+        grid-area: contacts;
+    }
+}
