@@ -2,17 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="joshwcomeau.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/joshwcomeau.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Register Form</title>
   </head>
 
   <body>
     <section class="contact">
-      <h1>Registration Form</h1>
       <form>
+        <h1 class="form__title">Registration Form</h1>
 
         <div class="double">
+
           <div class="inputGroup">
             <label for="fName">First Name</label>
             <input type="text" name="fName" id="fName" />
@@ -21,6 +22,7 @@
             <label for="lName">Last Name</label>
             <input type="text" name="lName" id="lName" />
           </div>
+
         </div>
 
         <div class="inputGroup">
@@ -38,12 +40,15 @@
           <input type="password" name="re-pass" id="re-pass" I />
         </div>
 
-        <div class="check">
+        <div class="check ">
           <input type="checkbox" id="accept" name="accept" value="accept" />
-          <label for="accept">I accept the Terms of Use & Privacy Policy.</label>
-          
+          <label for="accept"
+            >I accept the Terms of Use & Privacy Policy.</label
+          >
         </div>
-        <button type="submit">Register Now</button>
+        <div class="btn">
+        <button  class="register__btn" type="submit">Register Now</button>
+      </div>
       </form>
     </section>
   </body>

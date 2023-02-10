@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    display: grid;
+    position: relative;
+    background-image: url('../images/background.png');
+    font-size: 14px;
+
+
+}
+
+.contact {
+    width: 850px;
+    height: 610px;
+    position: absolute;
+    background-image: url('../images/form-background.png');
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+    border-radius: 24px;
+    overflow: hidden;
+    place-self: center;
+    box-shadow: 15px 15px 15px 2px rgba(0,0,0,0.75);
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    padding: 90px 50px 50px 50px;
+    align-items: baseline;
+    
+}
+
+.double {
+    display: flex;
+    width: 47%;
+    gap: 10%;
+}
+
+.inputGroup {
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputGroup input {
+    margin-bottom: 20px;
+    border-radius: 24px;
+    border: 1px solid lightgray;
+    height: 40px;
+}
+
+.form__title {
+    width: 400px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+.check{
+    color: gray;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.register__btn {
+
+    all: unset;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: #ae3c33;
+    padding: 8px 25px;
+    border-radius: 24px;
+    cursor: pointer;
+}

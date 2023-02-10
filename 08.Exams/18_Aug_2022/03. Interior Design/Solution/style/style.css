@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    width: 80%;
+    height: 1600px;
+    margin: 0 auto;
+
+    grid-template-areas:
+        /* "head head head head"
+        "head head head head"
+        "head head head head" */
+        "head head head head"
+        /* "main main main aside"
+        "main main main aside" */
+        "main main main aside"
+        "foot foot foot aside"
+    ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    font-family: 'Abril Fatface', cursive;
+}
+
+.head {
+    grid-area: head;
+    background-image: url(../image/image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 1550;
+    height: 800px;
+}
+
+.interior {
+    padding: 20px;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper {
+    width: 140px;
+}
+
+.interior__title {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    color: #363434;
+}
+
+.projects {
+    width: 320px;
+    height: 280px;
+    position: absolute;
+    right: 30px;
+    bottom: 320px;
+    background: rgb(157, 148, 140);
+    background: linear-gradient(90deg, rgba(157, 148, 140, 1) 10%, rgba(202, 200, 199, 1) 35%);
+
+    text-align: right;
+    padding: 40px 15px 15px 15px;
+    color: white;
+    text-shadow: 1px 1px #000000;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.projects__icon {
+    font-size: 24px;
+    color: #8d8581;
+    margin-bottom: 10px;
+}
+
+.aside {
+    width: 525px;
+    height: 800px;
+    grid-area: aside;
+    background-color: #bab1ad;
+}
+
+.aside__ul {
+    width: 480px;
+    height: 700px;
+    margin: 50px 0 0 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.nums {
+    color: white;
+    font-size: 66px;
+    font-weight: 100;
+}
+
+.text {
+    text-transform: uppercase;
+    opacity: 75%;
+    margin-top: -20px;
+}
+
+
+
+
+
+
+.main {
+    grid-area: main;
+    background-color: #f2f0f3;
+    width: 1000px;
+    height: 550px;
+    padding: 60px;
+}
+
+
+
+.foot {
+    grid-area: foot;
+    background-color: #f2f0f3;
+    width: 1000px;
+    height: 250px;
+}
+
+.foot__title {
+    padding-left: 80px;
+}
+
+
+.contact {
+    padding-left: 80px;
+
+}
+
+.food__info {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    margin-bottom: 30px;
+
+}
+
+.second__title {
+    font-size: 42px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.icon {
+    padding: 2px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
+
+.main__li {
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.foot__title {
+    margin-bottom: 15px;
+}
+
+.divider {
+    margin-bottom: 20px;
+
+}
+
+.contact__input {
+    background-color: #bab1ad;
+    width: 300px;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+.contact__input::placeholder{
+    
+    color: white;
+}
+.contact__button{
+    all:unset;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: #67784d;
+}
