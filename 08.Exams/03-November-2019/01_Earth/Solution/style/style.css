@@ -8,16 +8,17 @@ html {
 
 
 .section {
-    background-color: white;
+    position: relative;
+    background-color: black;
     border: 2px solid white;
     margin: 60px auto;
     width: 800px;
     height: 800px;
 }
 
-header {
-    padding: 12px;
-    background-color: black;
+.head {
+    padding-left: 12px;
+
 }
 
 header p {
@@ -30,30 +31,46 @@ h1 {
     font-size: 52px;
 }
 
-.container {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 15px;
-    margin: 20px;
+.earth {
+    width: 250px;
+}
 
+.container {
+    width: 290px;
+    height: 400px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    flex: 2;
+    /* flex: 2; */
 }
 
 .main {
+
+    background-color: white;
+    position: absolute;
     display: flex;
-    flex: 1;
-    border: 2px solid black;
+    left: 3px;
+    top: 130px;
+    /* flex: 1; */
+    width: 790px;
+    height: 62%;
 }
 
 .main>p {
-    padding: 20px;
+    padding: 20px 30px 0 0;
     display: flex;
     flex: 3;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 footer {
+    width: 790px;
+    left: 3px;
+    position: absolute;
+    top: 500px;
     padding: 25px;
     margin-top: 3px;
     position: relative;
@@ -65,7 +82,7 @@ h2 {
     position: absolute;
     background-color: black;
     color: white;
-    bottom: 145px;
+    bottom: 170px;
     left: 0;
 }
 
