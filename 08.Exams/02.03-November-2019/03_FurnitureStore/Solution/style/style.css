@@ -200,7 +200,7 @@ nav a {
     gap: 35px;
 }
 
-.nav__second button{
+.nav__second button {
     cursor: pointer;
     border: none;
     background-color: #cac3c3;
@@ -209,13 +209,15 @@ nav a {
     border-radius: 8px;
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 20px;
 }
-.icons i{
+
+.icons i {
     color: #808080;
 }
-.nav__second time{
+
+.nav__second time {
     font-size: 20px;
 }
