@@ -1,21 +1,39 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root {
     --clr-dark-blue: #234465;
     --clr-orange: #ffa000;
     --clr-light-gray: #91a1b2;
 }
-a{
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
 
 .container {
-    width: 80%;
+    width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.logo {
+    scale: 1.1;
 }
 
 header {
@@ -27,7 +45,7 @@ header {
     width: 150px;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
 }
 
 .header-second {
@@ -46,7 +64,7 @@ header {
 .navBtn {
     background-color: var(--clr-orange);
     color: white;
-    padding: 2px 15px;
+    padding: 6px 20px;
     border-radius: 16px;
     border: none;
     font-weight: bold;
@@ -67,14 +85,354 @@ header {
 
 .header-three {
     background-color: white;
-    width: 80%;
+    width: 72%;
+    height: 60px;
     margin: 0 auto;
+
 
 }
 
 .header-three ul {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    /* gap: 25px; */
     padding: 10px;
+}
+
+.first__link {
+    color: #c88163;
+    font-size: 18px;
+
+
+}
+
+.second__link {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding: 25px;
+}
+
+.main .wordpress {
+    width: 100%;
+    height: 300px;
+    /* background-color: #2f2e3d; */
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .wordpress .wordpress__title {
+    font-size: 62px;
+    font-weight: 900;
+}
+
+.main .wordpress .wordpress__info {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .wordpress .wordpress__info .wordpress__li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.main .wordpress .wordpress__info .wordpress__li .wordpress__p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.main .wordpress .wordpress__info .wordpress__li .icon {
+    font-size: 32px;
+
+}
+
+.main .wordpress .wordpress__btn {
+    font-size: 20px;
+    padding: 8px 120px;
+    border-radius: 24px;
+}
+
+.essentials {
+    position: relative;
+}
+
+.essentials .essentials__icon {
+    position: absolute;
+    scale: 1.15;
+    top: -100px;
+    left: -150px;
+    transform: rotate(20deg);
+    opacity: 50%;
+    z-index: -1;
+}
+
+.main .course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px auto;
+    width: 1360px;
+    background-color: #f2f2f2;
+    padding: 20px 60px;
+
+}
+
+/* .main .course  */
+.course__title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.course__divider {
+    width: 120px;
+    border: 2px solid #ffa000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.course__text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+.course__btn {
+    font-size: 20px;
+    padding: 8px 120px;
+    border-radius: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+
+.skills__wrapper {
+    display: flex;
+    gap: 140px;
+    margin-bottom: 50px;
+
+}
+
+.skills__ul-1,
+.skills__ul-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skills__li {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 300
+}
+
+.skills__icon {
+    color: #ffa000;
+    font-size: 42px;
+}
+
+.skills__divider {
+    width: 38%;
+}
+
+.theme__li {
+    width: 620px;
+    display: flex;
+    background-color: #dadada;
+    border-left: 5px solid #224262;
+    padding: 6px 12px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.theme__wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.theme__ul-first,
+.theme__ul-second {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.theme__divider {
+    width: 5%;
+    border: 2px solid #ffa000;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main .orange {
+    background-color: #ffa000;
+    color: white;
+}
+
+.orange__divider {
+    border: 2px solid white;
+    width: 35%;
+}
+
+.main .recording {
+    position: relative;
+    width: 1360px;
+    height: 500px;
+
+    background-color: #f2f2f2;
+
+    margin: 50px auto;
+    padding: 20px 30px;
+}
+
+.first__title,
+.second__title {
+    font-size: 22px;
+    color: #ffa000;
+}
+
+.first__p,
+.second__p {
+    font-size: 20px;
+
+}
+
+.add {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    color: white;
+    width: 1330px;
+    margin: 0 auto;
+    box-shadow: 6px 6px 5px 2px rgb(145 145 145);
+
+}
+
+.blue {
+    padding: 8px 12px;
+    display: flex;
+    background-color: #234465;
+}
+
+.oranges {
+    padding: 8px 12px;
+
+    background-color: #ffa000;
+    display: flex;
+
+}
+
+.add h3 {
+    width: 30%;
+    font-size: 24px;
+}
+
+.add ul {
+    list-style-type: disc;
+    font-size: 22px;
+}
+
+.teacher {
+    position: relative;
+    width: 1360px;
+
+
+    background-color: #f2f2f2;
+
+    margin: 50px auto;
+}
+
+.teacher__title {
+    padding-top: 20px;
+}
+
+.teacher_divider {
+    margin: 0px auto;
+    width: 16%;
+}
+
+.teacher__info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.img {
+    border-radius: 100%;
+    width: 480px;
+}
+
+.teacher__name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.teacher__text {
+    font-size: 22px;
+}
+
+.free__btn {
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+    width: 1360px;
+
+}
+
+.footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 265px;
+    background-color: #162b40;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.footer h4 {
+    color: #ffa000;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer p {
+    color: white;
+    opacity: 50%;
+    margin-bottom: 8px;
+}
+
+.footer .fa-brands {
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 24px;
 }
