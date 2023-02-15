@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css');
+
+:root {
+    --clr-main: #efefef;
+    --clr-text: #222222;
+    --section-width: 1400px;
+    --section-height: 600px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.header {
+    margin: 25px auto;
+    width: var(--section-width);
+    height: var(--section-height);
+    background-color: var(--clr-main);
+
+}
+
+.header .nav__header {
+    padding: 30px;
+    width: var(--section-width);
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .nav__header .fa-bars {
+    font-size: 20px;
+    color: black;
+}
+
+.big__card {
+    margin: 0 auto;
+    background-color: var(--clr-main);
+    width: var(--section-width);
+    height: var(--section-height);
+
+    padding: 100px 100px 0 100px;
+    display: flex;
+    position: relative;
+    flex: 1 1 40%;
+}
+
+.big__card .card__head {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.big__card .card__head .card__title {
+    font-size: 42px;
+}
+
+
+.big__card .card__head .card__title span {
+    font-weight: 100;
+}
+
+.big__card .card__head p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.divider__vertical {
+    height: 75px;
+    width: 0px;
+}
+
+.big__card .card__img img {
+    scale: 0.75;
+    position: absolute;
+    bottom: -86px;
+    right: 0;
+
+
+}
+
+.camera {
+    flex-direction: row-reverse;
+    padding: 0 100px;
+}
+
+.camera .card__head {
+    width: 600px;
+
+}
+
+.camera .card__head .card__title {
+    text-align: center;
+}
+
+.camera .card__head .card__title::before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 75px;
+    position: absolute;
+    top: 27%;
+    right: 630px;
+    background: rgb(7, 7, 7);
+}
+
+.camera .card__img img {
+    left: 50px;
+    bottom: 50px;
+    scale: 0.9;
+}
+
+.camera .icons {
+    display: flex;
+    gap: 12px;
+}
+
+.camera .icons .icon {
+    padding: 8px;
+    background-color: #909090;
+    color: var(--clr-main);
+}
+
+.main .big__img {
+    margin: 25px auto;
+    width: var(--section-width);
+    height: var(--section-height);
+    overflow: hidden;
+}
+
+.big__card--img {
+    width: 650px;
+    top: 150px;
+    right: 50px;
+    width: 850px;
+    top: 50px;
+}
+
+.tree__imgs {
+    margin: 25px auto;
+    width: var(--section-width);
+    height: var(--section-height);
+    background-color: var(--clr-main);
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tree__imgs img {
+    width: 350px;
+    height: auto;
+}
+
+.img__three {
+    scale: 1.4;
+}
+
+.footer {
+    margin: 25px auto 25px auto;
+    padding: 70px 230px 0 230px;
+    width: var(--section-width);
+    height: var(--section-height);
+    background-color: var(--clr-main);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+.card__title {
+    font-size: 42px;
+}
+
+
+.card__title span {
+    font-weight: 100;
+}
+
+.footer p {
+    font-style: italic;
+    font-size: 14px;
+    padding: 30px;
+    text-align: center;
+}
+
+.both {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.first__input,
+.second__input,
+.text__area {
+    background-color: var(--clr-main);
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.first__input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.second__input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.text__area::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.footer__btn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+}
+.foot {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, -50%);
+}
