@@ -13,6 +13,10 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.dots {
+    color: #008000;
+    border-bottom: none;
+}
 
 .card__text {
     width: 90%;
@@ -61,7 +65,8 @@ hr {
 table,
 th,
 td {
-    border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
+    border: 1px solid #008000;
+
 }
