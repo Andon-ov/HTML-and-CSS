@@ -1,15 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');
 
 :root {
-    --clr-primary: #f4f5f7;
+    --clr-primary: #f41412;
     --clr-green: #23be5e;
-    --clr-blue: #42abf8;
-    --clr-text: #5a6674;
+    --clr-icon: #b9b9b9;
+    --clr-text: #8a7c80;
+    --clr-input: #f9f9f9;
+
 
 }
 
 body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+h2 {
+    color: var(--clr-primary);
+    font-size: 20px;
+}
+
+input {
+    width: 90%;
+    border: none;
+    border-left: 1px solid var(--clr-icon);
+    background-color: var(--clr-input);
+    padding-left: 10px;
+
+}
+
+input::before {
+    content: 'f007';
+}
+
+.icon {
+    color: var(--clr-icon);
+    padding: 8px;
+    font-size: 20px;
+}
+
+.input__holder {
+    background-color: var(--clr-input);
+    border: 1px solid #ededed;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.input__holder:hover {
+    border: 1px solid var(--clr-primary);
+}
+
+.btn {
+    width: 300px;
+    height: 70px;
+    border: 1px solid #ededed;
+    background-color: var(--clr-input);
+    color: var(--clr-text);
+
+}
+
+.both {
+    opacity: 70%;
+}
+
+.send {
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: var(--clr-primary);
+    border-radius: 4px;
+}
+
+.container {
+    width: 1780px;
+    height: 830px;
+
+    margin: auto auto;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    justify-content: center;
+}
+
+.form__container {
+    margin-top: 30px;
+    width: 710px;
+    height: 660px;
     background-color: white;
-    font-family: "Lato";
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 40px 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.both .btn:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: var(--clr-primary);
+    border-radius: 4px;
+    opacity: 100%;
 }

@@ -4,11 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="joshwcomeau.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/joshwcomeau.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title></title>
   </head>
   <body>
-    
+    <div class="container">
+      <div class="form__container">
+        <form action="">
+          <h2 class="form__title">Sign up for AUTUMN Festival</h2>
+          <div class="form__name input__holder">
+            <i class="icon fa-solid fa-user"></i>
+            <input class="field-icon name" type="text" placeholder="Full Name" />
+          </div>
+          <div class="form__email input__holder">
+            <i class="icon fa-solid fa-envelope"></i>
+            <input class="field-icon emai" type="text" placeholder="Email Adress" />
+          </div>
+          <div class="form__adress input__holder">
+            <i class="icon fa-solid fa-key"></i>
+            <input class="field-icon pass" type="text" placeholder="Password" />
+          </div>
+        </form>
+        <div class="buttons">
+          <h2 class="buttons__title">Payment Details</h2>
+          <div class="both">
+            <button class="creditCard btn">
+              <i class="icon fa-brands fa-cc-visa"></i> Credit Card</button
+            ><button class="payPal btn">
+              <i class="icon fa-brands fa-cc-paypal"></i> Paypal
+            </button>
+          </div>
+          <div class="buttons__input input__holder">
+            <i class="icon fa-solid fa-credit-card"></i>
+            <input class="field-icon card" type="text" placeholder="Card Number" />
+          </div>
+          <button class="send btn">Send</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
