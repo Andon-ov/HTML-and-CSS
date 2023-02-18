@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik+Gemstones&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css');
+
+:root {
+    --clr-primary: #e50914;
+    --clr-green: ;
+    --clr-blue: ;
+    --clr-text: ;
+
+}
+
+body {
+    background-color: #222222;
+    font-family: Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../assets/bg.jpg");
+    background-position: top;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+}
+
+.btn {
+    all: unset;
+    color: white;
+    background-color: var(--clr-primary);
+    font-size: 28px;
+    padding: 6px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.header__nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 60px 60px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.hero {
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative;
+    z-index: 10; */
+
+}
+
+.hero .hero__title {
+    font-size: 98px;
+    line-height: 90px;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.hero .hero__subtitle {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.hero .hero__text {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 2px;
+}
+
+.form input[type='text'] {
+    padding: 20px;
+    width: 80%;
+    font-size: 28px;
+}
+
+.form .form__btn {
+    width: 40%;
+    border-radius: unset;
+    text-align: center;
+    font-size: 36px;
+}
+
+.form .form__btn .fa-chevron-right {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .grid {
+    margin: 10px 0 10px 0;
+    color: white;
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first,
+.three {
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    flex-direction: row-reverse;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .grid .grid__text {
+    flex-basis: 45%;
+    text-align: left;
+
+}
+
+.main .grid .grid__img {
+    flex-basis: 40%;
+    overflow: hidden;
+}
+
+.main .grid .text__title {
+    font-size: 88px;
+}
+
+.main .grid .text__subtitle {
+    font-size: 38px;
+    width: 80%;
+}
+
+.questions {
+    margin: 10px auto 10px auto;
+    background-color: black;
+    width: 100%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.questions .questions__title {
+    font-size: 72px;
+    padding: 50px;
+}
+
+.questions .questions__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.questions .questions__li {
+    background-color: #303030;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 36px;
+    align-items: center;
+}
+.questions .form__subtitle{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    opacity: 0.7;
+    font-size: 24px;
+}
+
+.footer .footer__wrapper {
+    padding: 60px 0 30px 500px;
+}
+.footer .footer__wrapper .footer__title{
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.footer .footer__wrapper .footer__grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    margin-bottom: 30px;
+}
+.footer .footer__wrapper .footer__grid .footer__ul li{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
