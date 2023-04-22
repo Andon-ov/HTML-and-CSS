@@ -1,13 +1,6 @@
-AnimalHelp
-Mission
-Volunteer
-News
-Contact
 
-You can make a difference
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-Donate Now
-Join our Newsletter
+
+
 
 We're there when animals need us most.
 Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
