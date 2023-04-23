@@ -3,9 +3,8 @@
 
 
 :root {
-    --clr-bg: #f6e0b5;
-    --clr-card-bg: #66545e;
-    --clr-text: #63505b;
+    --clr-main: #85dcff;
+
 }
 
 body {
@@ -21,7 +20,8 @@ body {
     border: 1px solid black;
     background-color: white;
 }
-.black{
+
+.btn.black {
     background-color: rgb(0, 0, 0);
     color: white;
 
@@ -36,6 +36,7 @@ body {
 
 }
 
+/* nav start */
 .head .nav {
     display: flex;
     padding: 30px 60px 30px 120px;
@@ -57,12 +58,16 @@ body {
     color: black;
 }
 
+/* nav end */
+
+/* hero start */
+
 .main .hero {
     display: flex;
     gap: 200px;
     max-width: 100%;
     height: 680px;
-    background-color: #85dcff;
+    background-color: var(--clr-main)
 }
 
 .main .hero .hero__card {
@@ -85,15 +90,143 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
 }
+
 .main .hero .hero__card .buttons {
     display: flex;
     gap: 35px;
 }
+
 .main .hero .card__img {
-    max-width: 670px;
-    max-height: 100%;
+    width: 670px;
+    height: 100%;
 }
 
 .main .hero .card__img img {
     height: 100%;
+    width: 100%;
+}
+
+/* hero end */
+
+/* animalsNeedUs start */
+
+.main .animalsNeedUs {
+    max-width: 100%;
+    max-height: 780px;
+    padding: 40px 150px 50px 150px;
+    text-align: center;
+
+    border: 1px solid var(--clr-main);
+}
+
+.main .animalsNeedUs .animalsNeedUs__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.main .animalsNeedUs .animalsNeedUs__subtitle {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.main .animalsNeedUs .animalsNeedUs__cards {
+    display: flex;
+    gap: 150px;
+}
+
+
+.main .animalsNeedUs .animalsNeedUs__cards .animalsNeedUs__icon {
+    color: var(--clr-main);
+    font-size: 172px;
+}
+
+.main .animalsNeedUs .animalsNeedUs__cards .animalsNeedUs__card-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.main .animalsNeedUs .animalsNeedUs__cards .animalsNeedUs__card-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* animalsNeedUs end */
+
+/* workTo start */
+.main .workTo {
+    width: 100%;
+    height: 850px;
+    background-color: var(--clr-main);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.main .workTo .workTo__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+}
+
+.main .workTo .workTo__wrapper .workTo__title {
+    font-size: 38px;
+}
+
+.main .workTo .workTo__wrapper .workTo__ul {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 80px;
+}
+
+.main .workTo .workTo__wrapper .workTo__ul .workTo__li {
+    position: relative;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.main .workTo .workTo__wrapper .workTo__ul .workTo__li::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    top: -10px;
+    left: -40px;
+}
+
+/* workTo end */
+
+/* animals start */
+
+.main .animals {
+    width: 100%;
+    height: 650px;
+    border: 1px solid var(--clr-main);
+    padding: 40px 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    text-align: center;
+}
+
+.main .animals .animals__title {
+    font-size: 62px;
+    font-weight: 800;
+}
+.main .animals .animals__subtitle{
+    font-size: 26px;
+}
+
+.main .animals .animals__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
 }
